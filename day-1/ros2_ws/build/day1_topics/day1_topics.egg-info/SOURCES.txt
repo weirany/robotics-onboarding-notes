@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/day1_topics/day1_topics.egg-info/PKG-INFO
+../../build/day1_topics/day1_topics.egg-info/SOURCES.txt
+../../build/day1_topics/day1_topics.egg-info/dependency_links.txt
+../../build/day1_topics/day1_topics.egg-info/entry_points.txt
+../../build/day1_topics/day1_topics.egg-info/requires.txt
+../../build/day1_topics/day1_topics.egg-info/top_level.txt
+../../build/day1_topics/day1_topics.egg-info/zip-safe
+day1_topics/__init__.py
+day1_topics/listener.py
+day1_topics/talker.py
+resource/day1_topics
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

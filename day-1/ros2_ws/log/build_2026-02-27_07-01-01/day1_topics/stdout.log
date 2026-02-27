@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/day1_topics/day1_topics.egg-info
+writing ../../build/day1_topics/day1_topics.egg-info/PKG-INFO
+writing dependency_links to ../../build/day1_topics/day1_topics.egg-info/dependency_links.txt
+writing entry points to ../../build/day1_topics/day1_topics.egg-info/entry_points.txt
+writing requirements to ../../build/day1_topics/day1_topics.egg-info/requires.txt
+writing top-level names to ../../build/day1_topics/day1_topics.egg-info/top_level.txt
+writing manifest file '../../build/day1_topics/day1_topics.egg-info/SOURCES.txt'
+reading manifest file '../../build/day1_topics/day1_topics.egg-info/SOURCES.txt'
+writing manifest file '../../build/day1_topics/day1_topics.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build
+creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib
+creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics
+copying day1_topics/__init__.py -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics
+copying day1_topics/listener.py -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics
+copying day1_topics/talker.py -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics
+running install
+running install_lib
+creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics
+copying /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics/__init__.py -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics
+copying /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics/listener.py -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics
+copying /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics/talker.py -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics
+byte-compiling /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics/listener.py to listener.cpython-310.pyc
+byte-compiling /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics/talker.py to talker.cpython-310.pyc
+running install_data
+creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/share/ament_index
+creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/share/ament_index/resource_index
+creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/share/ament_index/resource_index/packages
+copying resource/day1_topics -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/share/ament_index/resource_index/packages
+copying package.xml -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/share/day1_topics
+running install_egg_info
+Copying ../../build/day1_topics/day1_topics.egg-info to /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics-0.0.0-py3.10.egg-info
+running install_scripts
+Installing listener script to /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/day1_topics
+Installing talker script to /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/day1_topics
+writing list of installed files to '/home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/install.log'

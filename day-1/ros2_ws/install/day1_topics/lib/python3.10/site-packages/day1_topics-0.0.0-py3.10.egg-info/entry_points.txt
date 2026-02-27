@@ -1,0 +1,4 @@
+[console_scripts]
+listener = day1_topics.listener:main
+talker = day1_topics.talker:main
+

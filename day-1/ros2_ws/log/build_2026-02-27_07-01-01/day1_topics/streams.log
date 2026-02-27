@@ -1,0 +1,41 @@
+[0.333s] Invoking command in '/home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/src/day1_topics': PYTHONPATH=/home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/day1_topics build --build-base /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build install --record /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/install.log --single-version-externally-managed install_data
+[0.428s] running egg_info
+[0.428s] creating ../../build/day1_topics/day1_topics.egg-info
+[0.428s] writing ../../build/day1_topics/day1_topics.egg-info/PKG-INFO
+[0.428s] writing dependency_links to ../../build/day1_topics/day1_topics.egg-info/dependency_links.txt
+[0.429s] writing entry points to ../../build/day1_topics/day1_topics.egg-info/entry_points.txt
+[0.429s] writing requirements to ../../build/day1_topics/day1_topics.egg-info/requires.txt
+[0.429s] writing top-level names to ../../build/day1_topics/day1_topics.egg-info/top_level.txt
+[0.429s] writing manifest file '../../build/day1_topics/day1_topics.egg-info/SOURCES.txt'
+[0.429s] reading manifest file '../../build/day1_topics/day1_topics.egg-info/SOURCES.txt'
+[0.430s] writing manifest file '../../build/day1_topics/day1_topics.egg-info/SOURCES.txt'
+[0.430s] running build
+[0.430s] running build_py
+[0.430s] creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build
+[0.430s] creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib
+[0.430s] creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics
+[0.430s] copying day1_topics/__init__.py -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics
+[0.430s] copying day1_topics/listener.py -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics
+[0.430s] copying day1_topics/talker.py -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics
+[0.430s] running install
+[0.430s] running install_lib
+[0.431s] creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics
+[0.431s] copying /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics/__init__.py -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics
+[0.431s] copying /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics/listener.py -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics
+[0.431s] copying /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build/lib/day1_topics/talker.py -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics
+[0.431s] byte-compiling /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics/__init__.py to __init__.cpython-310.pyc
+[0.431s] byte-compiling /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics/listener.py to listener.cpython-310.pyc
+[0.431s] byte-compiling /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics/talker.py to talker.cpython-310.pyc
+[0.431s] running install_data
+[0.431s] creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/share/ament_index
+[0.432s] creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/share/ament_index/resource_index
+[0.432s] creating /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/share/ament_index/resource_index/packages
+[0.432s] copying resource/day1_topics -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/share/ament_index/resource_index/packages
+[0.432s] copying package.xml -> /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/share/day1_topics
+[0.432s] running install_egg_info
+[0.432s] Copying ../../build/day1_topics/day1_topics.egg-info to /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages/day1_topics-0.0.0-py3.10.egg-info
+[0.433s] running install_scripts
+[0.442s] Installing listener script to /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/day1_topics
+[0.442s] Installing talker script to /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/day1_topics
+[0.442s] writing list of installed files to '/home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/install.log'
+[0.454s] Invoked command in '/home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/src/day1_topics' returned '0': PYTHONPATH=/home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/install/day1_topics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/day1_topics build --build-base /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/build install --record /home/wye/Projects/robotics-onboarding-notes/day-1/ros2_ws/build/day1_topics/install.log --single-version-externally-managed install_data
