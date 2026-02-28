@@ -109,3 +109,24 @@
   * can be set in the launch file with namespace='namespace_name'
   * topics will be prefixed with the namespace, e.g. /namespace_name/topic_name
 
+# DAY 5
+
+## Learned
+* what is rosbag? like a record & replay test fixture for ROS. like a golden dataset for regression testing.
+  * could be used as a moving part of an entire regression test suite, or just for recording and replaying data for development and debugging
+* how to record a rosbag? 
+  * `ros2 bag record -o <bag_name> /topic_name`
+* how to check the contents of a rosbag?
+  * `ros2 bag info <bag_name>`
+* how to replay a rosbag?
+  * `ros2 bag play <bag_name>`
+* how to record multiple topics in a rosbag?
+  * `ros2 bag record -o <bag_name> /topic1 /topic2`
+* want to replay? only playing the cmd_vel topic. do not include the pose topic. (assume the cmdvel_pose bag contains both cmd_vel and pose topics)
+  * `ros2 bag play cmdvel_pose --topics /turtle1/cmd_vel`
+* want to replay the pose topic only? do not include the cmd_vel topic. 
+  * `ros2 bag play cmdvel_pose --topics /turtle1/pose`
+* log to csv file to compare the playback data with the original data. 
+  * `self.get_logger().info(f"Logging /turtle1/pose to {out_csv}")`
+* available ros2 bag options: exclude-topics, regex, rate, loop, split by size or duration, compression, etc.
+* storage options: sqlite3 (default), mcap. use `storage <id>` to specify. 
