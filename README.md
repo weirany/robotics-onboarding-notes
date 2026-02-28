@@ -88,3 +88,24 @@
 * Why should loop closure not affect the continuity of motion?
 * Understood TF tree and different kinds of "TF tree is broken"
 * lenrned robotic system architecture: power -> mcu -> linux -> ros2 -> application -> cloud
+
+# DAY 4
+
+## Learned
+* what is launch file? it's a way to start multiple nodes and set parameters in one command
+* how to write a launch file in Python
+  * the publisher python script needs to accept parameters
+  * self.declare_parameter('param_name', default_value) in the constructor
+  * update setup.py to include the launch file
+  * package.xml needs to include launch, launch_ros, rclpy, and std_msgs as dependencies
+  * bringup.launch.py
+    * create a launch description
+    * add nodes to the launch description with parameters
+    * return the launch description
+  * then compile the package and run the launch file
+  * --show-args to see the parameters that can be set from the command line
+  * use := to set parameters from the command line when running the launch file
+* what is namespace? it's a way to group nodes and topics together
+  * can be set in the launch file with namespace='namespace_name'
+  * topics will be prefixed with the namespace, e.g. /namespace_name/topic_name
+
