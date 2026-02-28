@@ -1,0 +1,35 @@
+[0.558s] Invoking command in '/home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/src/service_demo': PYTHONPATH=/home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/build/service_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/service_demo build --build-base /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/build/service_demo/build install --record /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/build/service_demo/install.log --single-version-externally-managed install_data
+[0.729s] running egg_info
+[0.729s] creating ../../build/service_demo/service_demo.egg-info
+[0.730s] writing ../../build/service_demo/service_demo.egg-info/PKG-INFO
+[0.730s] writing dependency_links to ../../build/service_demo/service_demo.egg-info/dependency_links.txt
+[0.730s] writing entry points to ../../build/service_demo/service_demo.egg-info/entry_points.txt
+[0.730s] writing requirements to ../../build/service_demo/service_demo.egg-info/requires.txt
+[0.730s] writing top-level names to ../../build/service_demo/service_demo.egg-info/top_level.txt
+[0.730s] writing manifest file '../../build/service_demo/service_demo.egg-info/SOURCES.txt'
+[0.731s] reading manifest file '../../build/service_demo/service_demo.egg-info/SOURCES.txt'
+[0.732s] writing manifest file '../../build/service_demo/service_demo.egg-info/SOURCES.txt'
+[0.732s] running build
+[0.732s] running build_py
+[0.732s] creating /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/build/service_demo/build
+[0.732s] creating /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/build/service_demo/build/lib
+[0.732s] creating /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/build/service_demo/build/lib/service_demo
+[0.732s] copying service_demo/__init__.py -> /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/build/service_demo/build/lib/service_demo
+[0.732s] running install
+[0.732s] running install_lib
+[0.733s] creating /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/lib/python3.10/site-packages/service_demo
+[0.733s] copying /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/build/service_demo/build/lib/service_demo/__init__.py -> /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/lib/python3.10/site-packages/service_demo
+[0.733s] byte-compiling /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/lib/python3.10/site-packages/service_demo/__init__.py to __init__.cpython-310.pyc
+[0.733s] running install_data
+[0.733s] creating /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/share/ament_index
+[0.733s] creating /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/share/ament_index/resource_index
+[0.734s] creating /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/share/ament_index/resource_index/packages
+[0.734s] copying resource/service_demo -> /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/share/ament_index/resource_index/packages
+[0.734s] copying package.xml -> /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/share/service_demo
+[0.734s] running install_egg_info
+[0.738s] Copying ../../build/service_demo/service_demo.egg-info to /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/lib/python3.10/site-packages/service_demo-0.0.0-py3.10.egg-info
+[0.738s] running install_scripts
+[0.751s] Installing add_two_ints_client script to /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/lib/service_demo
+[0.751s] Installing add_two_ints_server script to /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/lib/service_demo
+[0.751s] writing list of installed files to '/home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/build/service_demo/install.log'
+[0.797s] Invoked command in '/home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/src/service_demo' returned '0': PYTHONPATH=/home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/build/service_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/install/service_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/service_demo build --build-base /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/build/service_demo/build install --record /home/wye/Projects/robotics-onboarding-notes/day-2/ros2_ws/build/service_demo/install.log --single-version-externally-managed install_data

@@ -44,3 +44,30 @@
 
 - setup SSHFS
 - create a new workspace and package
+
+
+# DAY 2
+
+## Goal
+
+- Learn how to use ROS2 services
+- Understand the difference between services and topics
+- Implement a simple service server and client
+
+## Done
+- Created a service server that adds two integers
+- Created a service client that calls the add_two_ints service
+- Tested the service using the CLI and Python scripts
+
+## Learned
+* **Nodes** are the fundamental building blocks, acting as individual microservices that handle specific tasks like sensing or planning.
+* **Topics** enable asynchronous, many-to-many data streams ideal for continuous information like sensor feeds.
+* **Services** provide a synchronous request-response mechanism for one-off tasks such as toggling a switch or checking status.
+* **Actions** manage long-running, cancelable goals that require continuous progress feedback, such as navigating to a room.
+* **Perception** nodes process raw data from sensors to create a high-level understanding of the robot's environment.
+* **Planning** nodes use perception data to make high-level decisions and calculate the optimal path to a goal.
+* **Controllers** translate abstract paths into concrete velocity commands, commonly referred to as **cmd_vel**.
+* **QoS (Quality of Service)** settings allow you to tune communication to prioritize the latest data over guaranteed delivery.
+* **TF (Transform)** is a system for tracking and calculating the mathematical relationships between different coordinate frames.
+* **Odom** is a local reference frame that provides smooth, continuous movement data but drifts over time.
+* **Map** is a globally accurate reference frame used by SLAM systems to correct errors in the odometer’s position.
