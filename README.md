@@ -71,3 +71,20 @@
 * **TF (Transform)** is a system for tracking and calculating the mathematical relationships between different coordinate frames.
 * **Odom** is a local reference frame that provides smooth, continuous movement data but drifts over time.
 * **Map** is a globally accurate reference frame used by SLAM systems to correct errors in the odometer’s position.
+
+
+# DAY 3
+## Goal
+* learn Action and how it differs from Service and Topic
+
+## Done
+* played with Fibonacci Action example
+* found out that ROS2 CLI does not support Action yet
+
+## Learned
+* Why are "map" and "odom" separated?
+* Why does SLAM only modify the "map -> odom" transform?
+* Why should the local controller not depend on the "map" frame?
+* Why should loop closure not affect the continuity of motion?
+* Understood TF tree and different kinds of "TF tree is broken"
+* lenrned robotic system architecture: power -> mcu -> linux -> ros2 -> application -> cloud
