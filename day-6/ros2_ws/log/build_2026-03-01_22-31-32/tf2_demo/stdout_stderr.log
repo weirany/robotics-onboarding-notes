@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating tf2_demo.egg-info
+writing tf2_demo.egg-info/PKG-INFO
+writing dependency_links to tf2_demo.egg-info/dependency_links.txt
+writing entry points to tf2_demo.egg-info/entry_points.txt
+writing requirements to tf2_demo.egg-info/requires.txt
+writing top-level names to tf2_demo.egg-info/top_level.txt
+writing manifest file 'tf2_demo.egg-info/SOURCES.txt'
+reading manifest file 'tf2_demo.egg-info/SOURCES.txt'
+writing manifest file 'tf2_demo.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/lib/python3.10/site-packages/tf2-demo.egg-link (link to .)
+Installing odom_to_base_broadcaster script to /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/lib/tf2_demo
+Installing tf_listener script to /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/lib/tf2_demo
+
+Installed /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/build/tf2_demo
+running symlink_data
+creating /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/share/ament_index
+creating /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/share/ament_index/resource_index
+creating /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/share/ament_index/resource_index/packages
+symbolically linking /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/build/tf2_demo/resource/tf2_demo -> /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/share/ament_index/resource_index/packages
+symbolically linking /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/build/tf2_demo/package.xml -> /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/share/tf2_demo

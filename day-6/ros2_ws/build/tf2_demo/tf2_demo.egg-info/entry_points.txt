@@ -1,0 +1,4 @@
+[console_scripts]
+odom_to_base_broadcaster = tf2_demo.odom_to_base_broadcaster:main
+tf_listener = tf2_demo.tf_listener:main
+

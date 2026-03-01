@@ -130,3 +130,11 @@
   * `self.get_logger().info(f"Logging /turtle1/pose to {out_csv}")`
 * available ros2 bag options: exclude-topics, regex, rate, loop, split by size or duration, compression, etc.
 * storage options: sqlite3 (default), mcap. use `storage <id>` to specify. 
+
+# DAY 6
+
+## Learned
+* different frames: map, odom, laser, base_link, etc. 
+* transfroms: parent --> child
+* use RViz2 to view and interact with different frames
+* generate frame tree map: `ros2 run tf2_tools view_frames`

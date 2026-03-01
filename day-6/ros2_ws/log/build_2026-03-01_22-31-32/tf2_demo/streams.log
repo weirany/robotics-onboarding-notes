@@ -1,0 +1,25 @@
+[0.299s] Invoking command in '/home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/build/tf2_demo': PYTHONPATH=/home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/build/tf2_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/build/tf2_demo/build --no-deps symlink_data
+[0.404s] running develop
+[0.460s] running egg_info
+[0.460s] creating tf2_demo.egg-info
+[0.460s] writing tf2_demo.egg-info/PKG-INFO
+[0.460s] writing dependency_links to tf2_demo.egg-info/dependency_links.txt
+[0.460s] writing entry points to tf2_demo.egg-info/entry_points.txt
+[0.460s] writing requirements to tf2_demo.egg-info/requires.txt
+[0.460s] writing top-level names to tf2_demo.egg-info/top_level.txt
+[0.460s] writing manifest file 'tf2_demo.egg-info/SOURCES.txt'
+[0.461s] reading manifest file 'tf2_demo.egg-info/SOURCES.txt'
+[0.461s] writing manifest file 'tf2_demo.egg-info/SOURCES.txt'
+[0.462s] running build_ext
+[0.462s] Creating /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/lib/python3.10/site-packages/tf2-demo.egg-link (link to .)
+[0.462s] Installing odom_to_base_broadcaster script to /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/lib/tf2_demo
+[0.462s] Installing tf_listener script to /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/lib/tf2_demo
+[0.463s] 
+[0.463s] Installed /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/build/tf2_demo
+[0.463s] running symlink_data
+[0.463s] creating /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/share/ament_index
+[0.463s] creating /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/share/ament_index/resource_index
+[0.463s] creating /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/share/ament_index/resource_index/packages
+[0.463s] symbolically linking /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/build/tf2_demo/resource/tf2_demo -> /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/share/ament_index/resource_index/packages
+[0.463s] symbolically linking /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/build/tf2_demo/package.xml -> /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/share/tf2_demo
+[0.475s] Invoked command in '/home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/build/tf2_demo' returned '0': PYTHONPATH=/home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/build/tf2_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/install/tf2_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/wye/Projects/robotics-onboarding-notes/day-6/ros2_ws/build/tf2_demo/build --no-deps symlink_data
