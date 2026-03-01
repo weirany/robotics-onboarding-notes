@@ -138,3 +138,8 @@
 * transfroms: parent --> child
 * use RViz2 to view and interact with different frames
 * generate frame tree map: `ros2 run tf2_tools view_frames`
+
+# DAY 7
+
+## Learned
+* reviewed all the previous days' learnings and notes
