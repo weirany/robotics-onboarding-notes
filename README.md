@@ -45,7 +45,6 @@
 - setup SSHFS
 - create a new workspace and package
 
-
 # DAY 2
 
 ## Goal
@@ -55,91 +54,112 @@
 - Implement a simple service server and client
 
 ## Done
+
 - Created a service server that adds two integers
 - Created a service client that calls the add_two_ints service
 - Tested the service using the CLI and Python scripts
 
 ## Learned
-* **Nodes** are the fundamental building blocks, acting as individual microservices that handle specific tasks like sensing or planning.
-* **Topics** enable asynchronous, many-to-many data streams ideal for continuous information like sensor feeds.
-* **Services** provide a synchronous request-response mechanism for one-off tasks such as toggling a switch or checking status.
-* **Actions** manage long-running, cancelable goals that require continuous progress feedback, such as navigating to a room.
-* **Perception** nodes process raw data from sensors to create a high-level understanding of the robot's environment.
-* **Planning** nodes use perception data to make high-level decisions and calculate the optimal path to a goal.
-* **Controllers** translate abstract paths into concrete velocity commands, commonly referred to as **cmd_vel**.
-* **QoS (Quality of Service)** settings allow you to tune communication to prioritize the latest data over guaranteed delivery.
-* **TF (Transform)** is a system for tracking and calculating the mathematical relationships between different coordinate frames.
-* **Odom** is a local reference frame that provides smooth, continuous movement data but drifts over time.
-* **Map** is a globally accurate reference frame used by SLAM systems to correct errors in the odometer’s position.
 
+- **Nodes** are the fundamental building blocks, acting as individual microservices that handle specific tasks like sensing or planning.
+- **Topics** enable asynchronous, many-to-many data streams ideal for continuous information like sensor feeds.
+- **Services** provide a synchronous request-response mechanism for one-off tasks such as toggling a switch or checking status.
+- **Actions** manage long-running, cancelable goals that require continuous progress feedback, such as navigating to a room.
+- **Perception** nodes process raw data from sensors to create a high-level understanding of the robot's environment.
+- **Planning** nodes use perception data to make high-level decisions and calculate the optimal path to a goal.
+- **Controllers** translate abstract paths into concrete velocity commands, commonly referred to as **cmd_vel**.
+- **QoS (Quality of Service)** settings allow you to tune communication to prioritize the latest data over guaranteed delivery.
+- **TF (Transform)** is a system for tracking and calculating the mathematical relationships between different coordinate frames.
+- **Odom** is a local reference frame that provides smooth, continuous movement data but drifts over time.
+- **Map** is a globally accurate reference frame used by SLAM systems to correct errors in the odometer’s position.
 
 # DAY 3
+
 ## Goal
-* learn Action and how it differs from Service and Topic
+
+- learn Action and how it differs from Service and Topic
 
 ## Done
-* played with Fibonacci Action example
-* found out that ROS2 CLI does not support Action yet
+
+- played with Fibonacci Action example
+- found out that ROS2 CLI does not support Action yet
 
 ## Learned
-* Why are "map" and "odom" separated?
-* Why does SLAM only modify the "map -> odom" transform?
-* Why should the local controller not depend on the "map" frame?
-* Why should loop closure not affect the continuity of motion?
-* Understood TF tree and different kinds of "TF tree is broken"
-* lenrned robotic system architecture: power -> mcu -> linux -> ros2 -> application -> cloud
+
+- Why are "map" and "odom" separated?
+- Why does SLAM only modify the "map -> odom" transform?
+- Why should the local controller not depend on the "map" frame?
+- Why should loop closure not affect the continuity of motion?
+- Understood TF tree and different kinds of "TF tree is broken"
+- lenrned robotic system architecture: power -> mcu -> linux -> ros2 -> application -> cloud
 
 # DAY 4
 
 ## Learned
-* what is launch file? it's a way to start multiple nodes and set parameters in one command
-* how to write a launch file in Python
-  * the publisher python script needs to accept parameters
-  * self.declare_parameter('param_name', default_value) in the constructor
-  * update setup.py to include the launch file
-  * package.xml needs to include launch, launch_ros, rclpy, and std_msgs as dependencies
-  * bringup.launch.py
-    * create a launch description
-    * add nodes to the launch description with parameters
-    * return the launch description
-  * then compile the package and run the launch file
-  * --show-args to see the parameters that can be set from the command line
-  * use := to set parameters from the command line when running the launch file
-* what is namespace? it's a way to group nodes and topics together
-  * can be set in the launch file with namespace='namespace_name'
-  * topics will be prefixed with the namespace, e.g. /namespace_name/topic_name
+
+- what is launch file? it's a way to start multiple nodes and set parameters in one command
+- how to write a launch file in Python
+  - the publisher python script needs to accept parameters
+  - self.declare_parameter('param_name', default_value) in the constructor
+  - update setup.py to include the launch file
+  - package.xml needs to include launch, launch_ros, rclpy, and std_msgs as dependencies
+  - bringup.launch.py
+    - create a launch description
+    - add nodes to the launch description with parameters
+    - return the launch description
+  - then compile the package and run the launch file
+  - --show-args to see the parameters that can be set from the command line
+  - use := to set parameters from the command line when running the launch file
+- what is namespace? it's a way to group nodes and topics together
+  - can be set in the launch file with namespace='namespace_name'
+  - topics will be prefixed with the namespace, e.g. /namespace_name/topic_name
 
 # DAY 5
 
 ## Learned
-* what is rosbag? like a record & replay test fixture for ROS. like a golden dataset for regression testing.
-  * could be used as a moving part of an entire regression test suite, or just for recording and replaying data for development and debugging
-* how to record a rosbag? 
-  * `ros2 bag record -o <bag_name> /topic_name`
-* how to check the contents of a rosbag?
-  * `ros2 bag info <bag_name>`
-* how to replay a rosbag?
-  * `ros2 bag play <bag_name>`
-* how to record multiple topics in a rosbag?
-  * `ros2 bag record -o <bag_name> /topic1 /topic2`
-* want to replay? only playing the cmd_vel topic. do not include the pose topic. (assume the cmdvel_pose bag contains both cmd_vel and pose topics)
-  * `ros2 bag play cmdvel_pose --topics /turtle1/cmd_vel`
-* want to replay the pose topic only? do not include the cmd_vel topic. 
-  * `ros2 bag play cmdvel_pose --topics /turtle1/pose`
-* log to csv file to compare the playback data with the original data. 
-  * `self.get_logger().info(f"Logging /turtle1/pose to {out_csv}")`
-* available ros2 bag options: exclude-topics, regex, rate, loop, split by size or duration, compression, etc.
-* storage options: sqlite3 (default), mcap. use `storage <id>` to specify. 
+
+- what is rosbag? like a record & replay test fixture for ROS. like a golden dataset for regression testing.
+  - could be used as a moving part of an entire regression test suite, or just for recording and replaying data for development and debugging
+- how to record a rosbag?
+  - `ros2 bag record -o <bag_name> /topic_name`
+- how to check the contents of a rosbag?
+  - `ros2 bag info <bag_name>`
+- how to replay a rosbag?
+  - `ros2 bag play <bag_name>`
+- how to record multiple topics in a rosbag?
+  - `ros2 bag record -o <bag_name> /topic1 /topic2`
+- want to replay? only playing the cmd_vel topic. do not include the pose topic. (assume the cmdvel_pose bag contains both cmd_vel and pose topics)
+  - `ros2 bag play cmdvel_pose --topics /turtle1/cmd_vel`
+- want to replay the pose topic only? do not include the cmd_vel topic.
+  - `ros2 bag play cmdvel_pose --topics /turtle1/pose`
+- log to csv file to compare the playback data with the original data.
+  - `self.get_logger().info(f"Logging /turtle1/pose to {out_csv}")`
+- available ros2 bag options: exclude-topics, regex, rate, loop, split by size or duration, compression, etc.
+- storage options: sqlite3 (default), mcap. use `storage <id>` to specify.
 
 # DAY 6
 
 ## Learned
-* different frames: map, odom, laser, base_link, etc. 
-* transfroms: parent --> child
-* use RViz2 to view and interact with different frames
-* generate frame tree map: `ros2 run tf2_tools view_frames`
+
+- different frames: map, odom, laser, base_link, etc.
+- transfroms: parent --> child
+- use RViz2 to view and interact with different frames
+- generate frame tree map: `ros2 run tf2_tools view_frames`
 
 # DAY 7
 
 ## Learned
-* reviewed all the previous days' learnings and notes
+
+- reviewed all the previous days' learnings and notes
+
+# DAY 8
+
+## Learned
+
+- URDF is like the manual and blueprint of your robot, describing its physical structure, joints, and how everything is connected.
+  - the robot has how many bones (links), and
+  - those how to join together (joints)
+  - which part can move and how (joint types and limits)
+- xacro is like a "manual generator", a macro language that helps you write URDF files more efficiently by allowing you to use variables, loops, and conditionals, making it easier to manage complex robot descriptions.
+- in real world projects, you will often see xacro files instead of raw URDF files, because they are more maintainable and reusable.
+- RViz vs. Sim: RVis is like a visual monitor. it shows but not can't interact with the robot. Like the monitor in a garage showing the car's status, but you can't drive the car through the monitor. Sim is like a video game. you can see and interact with the robot, like driving a car in a racing game. RViz subscrbies to topics and TF to visualize the robot's state, while Sim runs the physics and allows you to control the robot.
